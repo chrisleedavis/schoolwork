@@ -8,7 +8,7 @@
 [code-climate-image]: https://codeclimate.com/github/chrisleedavis/schoolwork/badges/gpa.svg
 
 [coveralls-url]: https://coveralls.io/github/chrisleedavis/schoolwork?branch=master
-[coveralls-image]: https://coveralls.io/repos/chrisleedavis/schoolwork/badge.svg?branch=master&service=github
+[coveralls-image]: https://coveralls.io/repos/github/chrisleedavis/schoolwork/badge.svg?branch=master
 
 ## Description
 Schoolwork is a system designed to schools and students with the ability to manage school work and collaboration online.
