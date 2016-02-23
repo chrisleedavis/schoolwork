@@ -10,4 +10,4 @@ Schoolwork is a system designed to schools and students with the ability to mana
 | Server            | [node 4.2.1](https://nodejs.org/en/)                          |
 | Database          | [mongo](https://www.mongodb.org/)                             |
 
-### Work in Progress: still need to incorporate deep-freeze, immutable, flush out functionality, hookup backend, etc.
+### Work in Progress: still need to incorporate deep-freeze, immutable, flush out functionality, hookup backend, eslint, etc.
