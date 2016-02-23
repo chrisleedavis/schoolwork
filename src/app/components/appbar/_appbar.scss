@@ -1,0 +1,50 @@
+@import "../_theme";
+@import "~muicss/lib/sass/mui/appbar";
+@import "~muicss/lib/sass/mui/dropdowns";
+
+@media (max-width: 479px) {
+  .mui--appbar-min-height, .mui-appbar {
+    min-height: 64px;
+  }
+}
+
+.mui-appbar a {
+  color: $white;
+  font-size: x-large;
+  font-weight: 700;
+  padding: 0.5em;
+  line-height: 1.5em;
+  text-decoration: none;
+}
+
+.mui-appbar > .nav a {
+  font-size: medium;
+  font-weight: 500;
+  line-height: 1.95em;
+}
+
+.mui-appbar > .nav li {
+  list-style: none;
+  display: inline;
+}
+
+.appbar-vert {
+  bottom: 14px;
+  vertical-align: top;
+}
+
+.appbar-vert button {
+  box-shadow: none !important;
+}
+
+.appbar-vert i {
+  top: 8px !important;
+  right: 6px !important;
+  position: relative !important;
+}
+
+.appbar-vert-nav {
+  top: 40px;
+  left: 25px;
+  width: 100px;
+}

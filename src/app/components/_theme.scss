@@ -1,0 +1,31 @@
+$white: #ffffff;
+$grey: #f0f0f0;
+$light-grey: #fbfbfb;
+$danger: #E57373;
+$info: #90CAF9;
+$warning: #FFD54F;
+$success: #A5D6A7;
+$primary-color: #EF5350;
+$secondary-color: #FFCDD2;
+
+/* MUI overrides */
+$mui-primary-color: $primary-color;
+$mui-primary-color-dark: #B71C1C;
+$mui-primary-color-light: $primary-color;
+
+$mui-accent-color: $secondary-color;
+$mui-accent-color-dark: #EF9A9A;
+$mui-accent-color-light: $secondary-color;
+
+/* MUI core imports  */
+@import "~muicss/lib/sass/normalize-3.0.2";
+@import "~muicss/lib/sass/mui/colors";
+@import "~muicss/lib/sass/mui/variables";
+@import "~muicss/lib/sass/mui/mixins";
+@import "~muicss/lib/sass/mui/mixins";
+@import "~muicss/lib/sass/mui/helpers";
+
+.content {
+  position: absolute;
+  padding: 15px;
+}
