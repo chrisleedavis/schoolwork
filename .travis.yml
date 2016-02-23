@@ -9,6 +9,9 @@ branches:
 script:
   - webpack
 
+after_script:
+  - npm test
+
 notifications:
   email:
     recipients:

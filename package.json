@@ -14,8 +14,8 @@
   },
   "scripts": {
     "build": "webpack",
-    "dev": "webpack-dev-server -d --colors --inline --hot",
     "test": "karma start ./karma.conf.js",
+    "dev": "webpack-dev-server -d --colors --inline --hot",
     "prod": "webpack -production",
     "start": "node ./src/server/server.js"
   },

@@ -11,7 +11,7 @@ module.exports = (config) => {
             "webpack.config.tests.js": ["webpack"]
         },
         coverageReporter: {
-            type: "text"
+            type: "lcovonly"
         },
         reporters: ["dots", "coverage"],
         singleRun: true,
