@@ -34,4 +34,6 @@ module.exports = (config) => {
             noInfo: true
         }
     });
+
+    config.LOG_DEBUG = true;
 };
