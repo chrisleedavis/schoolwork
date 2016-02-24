@@ -23,7 +23,7 @@ class VerticalNav extends React.Component {
 
     render() {
 
-        let className = classNames("appbar-vert-nav mui-dropdown__menu mui-dropdown__menu--right",
+        const className = classNames("appbar-vert-nav mui-dropdown__menu mui-dropdown__menu--right",
             { "mui--is-open": this.state.isOpen });
 
         return (
@@ -50,5 +50,5 @@ class VerticalNav extends React.Component {
     }
 }
 
-export default enhanceWithClickOutside(VerticalNav)
+export default enhanceWithClickOutside(VerticalNav);
 

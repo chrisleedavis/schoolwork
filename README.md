@@ -23,8 +23,6 @@ Schoolwork is a system designed to schools and students with the ability to mana
 | Database          | [mongo](https://www.mongodb.org/)                             |
 
 ### Work in Progress: 
-- eslint
-- add coverage reports with build
 - still need to incorporate deep-freeze & immutable
 - flush out functionality
 - hookup backend

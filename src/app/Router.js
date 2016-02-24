@@ -24,4 +24,4 @@ export default React.createClass({
             <Router history={browserHistory} routes={rootRoute} />
         );
     }
-})
+});

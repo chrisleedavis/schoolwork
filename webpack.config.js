@@ -11,9 +11,15 @@ module.exports = {
     resolve: {
       extensions: ["", ".json", ".js", ".jsx", ".css", ".scss"]
     },
+    eslint: {
+        configFile: "./.eslintrc"
+    },
     module: {
+       preLoaders: [
+           { test: /\.js$/, exclude: /(node_modules)/, loader: "eslint-loader" }
+       ],
        loaders: [
-           { test: /\.js$/, exclude: /(node_modules)$/, loader: "babel" },
+           { test: /\.js$/, exclude: /(node_modules)/, loader: "babel" },
            { test: /\.scss$/, loader: "style!css!sass" },
            { test: /\.css$/, loader: "style!css" },
            { test: /\.(png|jpg)$/, loader: "url?limit=8192" }, // inline base64 URLs for <=8k images, direct URLs for the rest

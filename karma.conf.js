@@ -1,5 +1,17 @@
 "use strict";
 
+const coverageInformation = {
+        true: {
+            coverageReporter: { type: "text" },
+            reporters: ["dots", "coverage"]
+        },
+        false: {
+            coverageReporter: { type: "lcovonly" },
+            reporters: ["dots", "coverage", "coveralls"]
+        }
+    },
+    isDevelopment = process.argv.indexOf("-d") >= 0;
+
 module.exports = (config) => {
     config.set({
         browsers: ["PhantomJS"],
@@ -10,11 +22,8 @@ module.exports = (config) => {
         preprocessors: {
             "webpack.config.tests.js": ["webpack"]
         },
-        coverageReporter: {
-            type: "lcovonly",
-            dir: "coverage/"
-        },
-        reporters: ["dots", "coverage", "coveralls"],
+        coverageReporter: coverageInformation[isDevelopment].coverageReporter,
+        reporters: coverageInformation[isDevelopment].reporters,
         singleRun: true,
         webpack: {
             resolve: {
