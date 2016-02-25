@@ -10,8 +10,8 @@ const coverageInformation = {
         false: {
             coverageReporter: { type: "lcovonly" },
             reporters: ["dots", "coverage", "coveralls"],
-            singleRun: false,
-            autoWatch: true
+            singleRun: true,
+            autoWatch: false
         }
     },
     isDevelopment = process.argv.indexOf("-d") >= 0,
