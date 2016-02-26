@@ -8,12 +8,13 @@ describe("App Tests", () => {
     it("render App component properly", () => {
 
         // Render the router in the document
-        const app = TestUtils.renderIntoDocument(
-                <div><App /></div>
-            ),
-            appNode = ReactDOM.findDOMNode(app);
+        const dom = TestUtils.renderIntoDocument(<App />),
+            node = ReactDOM.findDOMNode(dom),
+            currentYear = new Date().getFullYear();
 
-        expect(TestUtils.isDOMComponent(appNode)).toBeTruthy();
+        expect(TestUtils.isDOMComponent(node)).toBeTruthy();
+        expect(TestUtils.findRenderedDOMComponentWithClass(dom, "mui-appbar")).not.toBeUndefined();
+        expect(TestUtils.findRenderedDOMComponentWithTag(dom, "footer").textContent.substring(1)).toEqual(" " + currentYear + " Schoolwork");
     });
 
 });

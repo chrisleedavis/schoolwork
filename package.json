@@ -16,7 +16,7 @@
     "build": "webpack",
     "test-d": "karma start ./karma.conf.js -d",
     "test": "karma start ./karma.conf.js",
-    "dev": "webpack-dev-server -d --colors --inline --hot",
+    "dev": "webpack-dev-server -d --colors --inline --hot --history-api-fallback",
     "prod": "webpack -production",
     "start": "node ./src/server/server.js"
   },

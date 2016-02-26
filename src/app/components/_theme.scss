@@ -1,6 +1,7 @@
 $white: #ffffff;
 $grey: #f0f0f0;
 $light-grey: #fbfbfb;
+$dark-grey: #5C5E63;
 $danger: #E57373;
 $info: #90CAF9;
 $warning: #FFD54F;
@@ -28,4 +29,30 @@ $mui-accent-color-light: $secondary-color;
 .content {
   position: absolute;
   padding: 15px;
+}
+
+.mui--text-primary {
+  color: $primary-color;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $primary-color;
+}
+
+footer {
+  background-color: $dark-grey;
+  color: $grey;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  font-size: small;
+}
+
+footer p {
+  padding-left: 15px;
+}
+
+.page-link a {
+  text-decoration: none;
+  color: $primary-color;
 }

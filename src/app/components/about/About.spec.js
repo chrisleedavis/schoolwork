@@ -11,7 +11,10 @@ describe("About Tests", () => {
             node = ReactDOM.findDOMNode(dom);
 
         expect(TestUtils.isDOMComponent(node)).toBeTruthy();
-        expect(node.textContent).toEqual("About Schoolwork");
+        expect(TestUtils.findRenderedDOMComponentWithTag(dom, "h2").textContent).toEqual("About Schoolwork");
+        expect(TestUtils.findRenderedDOMComponentWithTag(dom, "h3").textContent).toEqual("Community");
+        expect(TestUtils.findRenderedDOMComponentWithTag(dom, "a").textContent).toEqual("open source project");
+        expect(TestUtils.scryRenderedDOMComponentsWithTag(dom, "p").length).toEqual(2);
     };
 
     it("render About component properly", () => {

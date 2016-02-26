@@ -29,7 +29,7 @@ class VerticalNav extends React.Component {
         return (
             <div className="mui-dropdown appbar-vert">
                 <Button color="primary" variant="fab" size="small" onClick={this.handleClick.bind(this)}>
-                    <i className="material-icons md-icon dp48">more_vert</i>
+                    <i className="material-icons md-icon">more_vert</i>
                 </Button>
                 <ul role="nav" className={className}>
                     <li><NavLink to="/about" onClick={this.handleClick.bind(this)}>About</NavLink></li>
