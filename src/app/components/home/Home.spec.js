@@ -11,7 +11,8 @@ describe("Home Tests", () => {
             node = ReactDOM.findDOMNode(dom);
 
         expect(TestUtils.isDOMComponent(node)).toBeTruthy();
-        expect(node.textContent).toEqual("Welcome to Schoolwork");
+        expect(TestUtils.findRenderedDOMComponentWithTag(dom, "h1").textContent).toEqual("Welcome to Schoolwork");
+        expect(TestUtils.findRenderedDOMComponentWithTag(dom, "button").textContent).toEqual("Click Me");
     };
 
     it("render Home component properly", () => {
