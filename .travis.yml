@@ -7,10 +7,7 @@ branches:
     - master
 
 script:
-  - webpack
-
-after_script:
-  - npm test
+  - webpack karma start ./karma.conf.js
 
 notifications:
   email:
