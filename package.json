@@ -35,8 +35,10 @@
     "react-addons-css-transition-group": "^0.14.7",
     "react-click-outside": "^2.1.0",
     "react-dom": "^0.14.7",
+    "react-redux": "^4.4.0",
     "react-responsive": "^1.1.1",
-    "react-router": "^2.0.0"
+    "react-router": "^2.0.0",
+    "redux": "^3.3.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.3",
@@ -70,6 +72,7 @@
     "path": "^0.12.7",
     "phantomjs-prebuilt": "^2.1.4",
     "react-addons-test-utils": "^0.14.7",
+    "redux-devtools": "^3.1.1",
     "replace-webpack-plugin": "^0.1.2",
     "sass-loader": "^3.1.2",
     "static-loader": "^0.1.8",

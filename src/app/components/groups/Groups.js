@@ -4,7 +4,7 @@ export default React.createClass({
     render() {
         return (
             <div>
-                <h1>Your Groups</h1>
+                <h2>Your Groups</h2>
             </div>
         );
     }

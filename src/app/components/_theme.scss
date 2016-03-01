@@ -6,8 +6,8 @@ $danger: #E57373;
 $info: #90CAF9;
 $warning: #FFD54F;
 $success: #A5D6A7;
-$primary-color: #EF5350;
-$secondary-color: #FFCDD2;
+$primary-color: #FF9800;
+$secondary-color: #0277bb;
 
 /* MUI overrides */
 $mui-primary-color: $primary-color;
@@ -36,7 +36,7 @@ $mui-accent-color-light: $secondary-color;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: $primary-color;
+  color: $secondary-color;
 }
 
 footer {
@@ -54,5 +54,5 @@ footer p {
 
 .page-link a {
   text-decoration: none;
-  color: $primary-color;
+  color: $secondary-color;
 }

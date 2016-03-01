@@ -4,7 +4,7 @@ export default React.createClass({
     render() {
         return (
             <div>
-                <h1>Schoolwork Calendar</h1>
+                <h2>Schoolwork Calendar</h2>
             </div>
         );
     }
